@@ -1,0 +1,39 @@
+.hero_wrapper {
+  max-width: 110rem;
+
+  & > p {
+    line-height: 100%;
+  }
+}
+
+.greeting {
+  font-size: 2.4rem;
+  font-weight: 600;
+
+  color: var(--text-primary-dark);
+  margin-bottom: 0.25rem;
+}
+
+.name {
+  font-size: 7.2rem;
+  font-weight: 500;
+
+  color: var(--text-primary-light);
+  margin-bottom: 0.5rem;
+}
+
+.profession {
+  font-size: 4.8rem;
+  font-weight: 500;
+  color: var(--text-primary);
+
+  margin-bottom: 1rem;
+}
+
+.subtext {
+  font-size: 2.4rem;
+  color: var(--text-primary-dark);
+  line-height: 1.3 !important;
+
+  max-width: 60rem;
+}

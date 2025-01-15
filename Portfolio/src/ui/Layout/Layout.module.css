@@ -8,3 +8,9 @@
   margin-top: 6.2rem;
   min-height: calc(100dvh - 6.2rem);
 }
+
+.main {
+  position: relative;
+
+  padding: 1rem 5rem;
+}
