@@ -18,7 +18,7 @@ function Navigation() {
     <nav className={styles.navigation}>
       <ul className={styles.navigation_list}>
         {linkItems.map((navItem) => (
-          <NavigationItem navItem={navItem} />
+          <NavigationItem key={navItem.link_name} navItem={navItem} />
         ))}
       </ul>
     </nav>
