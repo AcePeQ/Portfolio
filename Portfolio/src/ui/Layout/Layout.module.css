@@ -1,0 +1,10 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr max-content;
+
+  position: relative;
+
+  margin-top: 6.2rem;
+  min-height: calc(100dvh - 6.2rem);
+}

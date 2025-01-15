@@ -114,3 +114,12 @@ h5,
 h6 {
   text-wrap: balance;
 }
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
