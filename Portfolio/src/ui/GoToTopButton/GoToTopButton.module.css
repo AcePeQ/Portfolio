@@ -31,5 +31,5 @@
 .button:hover {
   color: var(--text-primary-light);
 
-  border: 2px solid var(--accent-purple);
+  border: 2px solid var(--accent-purple-dark);
 }
