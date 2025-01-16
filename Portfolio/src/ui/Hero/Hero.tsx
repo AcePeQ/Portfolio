@@ -14,7 +14,7 @@ function Hero() {
       <p className={styles.greeting}>Hi, I'm</p>
       <p className={styles.name}>Maciej Nojszewski</p>
       <p className={styles.profession}>
-        I'm a <span className={styles.highlight}>Front-End Developer</span>
+        I'm a <span className={styles.highlight}>Frontend Developer</span>
       </p>
       <p className={styles.subtext}>
         I'm currently focused on expending my experince designing and developing

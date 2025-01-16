@@ -1,0 +1,29 @@
+.introduce_wrapper {
+  display: flex;
+  gap: 5rem;
+}
+
+.image_box {
+  flex: 0 0 15rem;
+
+  border: 3px solid var(--dar);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.introduce_box {
+  color: var(--text-primary-light);
+
+  .introduce_header {
+    font-size: 4.8rem;
+    font-weight: 600;
+
+    margin-bottom: 2rem;
+  }
+
+  .introduce_text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 1rem 0;
+  }
+}

@@ -1,0 +1,16 @@
+.aboutme_wrapper {
+  height: 100%;
+  max-width: 120rem;
+  width: 100%;
+
+  margin: 0 auto;
+
+  border: 2px solid var();
+
+  border-radius: 6px;
+  padding: 3rem 5rem;
+
+  border: 2px solid var(--bg-color);
+
+  box-shadow: 0 0 3rem var(--accent-purple-dark);
+}
