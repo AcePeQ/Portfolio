@@ -11,7 +11,7 @@ function Button({
   onClick: MouseEventHandler;
 }) {
   return (
-    <button onClick={onClick} className={`${styles.button} ${styles[type]}`}>
+    <button onClick={onClick} className={`${styles.button} ${styles[type]} `}>
       {children}
     </button>
   );

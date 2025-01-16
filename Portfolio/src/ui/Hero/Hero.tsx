@@ -21,7 +21,7 @@ function Hero() {
         modern websites
       </p>
 
-      <Button onClick={handleRedirectTo} type="primary">
+      <Button onClick={handleRedirectTo} type="primary-animated">
         About me
       </Button>
     </div>

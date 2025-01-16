@@ -13,6 +13,26 @@
   border-radius: 4px;
 }
 
+.primary-animated {
+  background-color: var(--button-bg-dark);
+  color: var(--text-primary);
+
+  box-shadow: 0 0.5rem 1.5rem var(--button-box-shadow-dark);
+}
+
+.primary-animated:hover {
+  color: var(--text-primary-light);
+
+  box-shadow: 0 1rem 2rem var(--button-box-shadow-dark);
+
+  transform: translateY(-2px);
+}
+
+.primary-animated:active {
+  transform: translateY(0px);
+  box-shadow: 0 0.5rem 1.5rem var(--button-box-shadow);
+}
+
 .primary {
   background-color: var(--button-bg);
   color: var(--text-primary);
@@ -24,12 +44,5 @@
   background-color: var(--button-bg-dark);
   color: var(--text-primary-light);
 
-  box-shadow: 0 1rem 2rem var(--button-box-shadow-dark);
-
-  transform: translateY(-2px);
-}
-
-.primary:active {
-  transform: translateY(0px);
-  box-shadow: 0 0.5rem 1.5rem var(--button-box-shadow);
+  box-shadow: 0 0.5rem 1.5rem var(--button-box-shadow-dark);
 }
