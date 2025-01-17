@@ -10,7 +10,7 @@ function TechnologyItem({ technology }: { technology: TechnologyItemType }) {
     <li className={styles.list_item}>
       <img
         className={styles.technology_icon}
-        src={`public/technologyIcons/${technology.src}`}
+        src={`/technologyIcons/${technology.src}`}
         alt={`Icon of ${technology.label}`}
       />
     </li>

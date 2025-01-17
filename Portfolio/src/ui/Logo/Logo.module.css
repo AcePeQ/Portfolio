@@ -1,13 +1,18 @@
-.logo {
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
 }
 
-.logo_link {
+.logo_link:link,
+.logo_link:visited {
   display: flex;
   align-items: center;
   justify-content: center;
 
   text-decoration: none;
   color: var(--text-primary);
+  background: var(--bg-color);
   font-size: 2rem;
   font-weight: 500;
 
@@ -16,5 +21,47 @@
 
   border-radius: 50%;
 
-  border: 1px solid red;
+  position: relative;
+
+  transition: transform 0.4s;
+}
+
+.logo_link:link:after,
+.logo_link:link:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background: conic-gradient(
+    from var(--angle),
+    transparent 50%,
+    var(--accent-red)
+  );
+
+  width: 110%;
+  height: 110%;
+  border-radius: 50%;
+  padding: 3px;
+
+  z-index: -1;
+
+  animation: 3s spin linear infinite;
+}
+
+.logo_link:link:before {
+  filter: blur(0.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
 }
