@@ -1,0 +1,27 @@
+.technology_icon {
+  width: 6.8rem;
+}
+
+.list_item {
+  cursor: pointer;
+  animation: upAndDownAnimation 1.5s ease-in-out infinite normal;
+  transition: scale 0.4s;
+}
+
+.list_item:hover {
+  scale: 1.1;
+}
+
+@keyframes upAndDownAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

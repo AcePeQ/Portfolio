@@ -14,35 +14,36 @@
 }
 
 .primary-animated {
-  background-color: var(--button-bg-dark);
+  background-color: var(--accent-red);
   color: var(--text-primary);
 
-  box-shadow: 0 0.5rem 1.5rem var(--button-box-shadow-dark);
+  box-shadow: 0 0.5rem 1.5rem var(--shadow-red);
 }
 
 .primary-animated:hover {
   color: var(--text-primary-light);
-
-  box-shadow: 0 1rem 2rem var(--button-box-shadow-dark);
+  background-color: var(--hover-red);
+  box-shadow: 0 1rem 2rem var(--shadow-red-hover);
 
   transform: translateY(-2px);
 }
 
 .primary-animated:active {
+  color: var(--text-primary-light);
   transform: translateY(0px);
-  box-shadow: 0 0.5rem 1.5rem var(--button-box-shadow);
+  box-shadow: 0 0.5rem 1.5rem var(--shadow-red);
 }
 
 .primary {
-  background-color: var(--button-bg);
+  background-color: var(--accent-red);
   color: var(--text-primary);
 
-  box-shadow: 0 0.5rem 1.5rem var(--button-box-shadow);
+  box-shadow: 0 0.5rem 1.5rem var(--shadow-red);
 }
 
 .primary:hover {
-  background-color: var(--button-bg-dark);
+  background-color: var(--hover-red);
   color: var(--text-primary-light);
 
-  box-shadow: 0 0.5rem 1.5rem var(--button-box-shadow-dark);
+  box-shadow: 0 0.5rem 1.5rem var(--shadow-red-hover);
 }

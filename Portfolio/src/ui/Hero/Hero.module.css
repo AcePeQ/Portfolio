@@ -38,9 +38,9 @@
 .highlight::after {
   background: radial-gradient(
     circle,
-    var(--accent-purple-light),
-    var(--accent-purple),
-    var(--accent-purple-dark)
+    var(--accent-red-light),
+    var(--accent-red),
+    var(--accent-red-dark)
   );
   animation: colorSwap 15s linear infinite;
   background-size: 200%;

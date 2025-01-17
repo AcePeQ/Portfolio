@@ -1,55 +1,38 @@
 :root {
-  /* Primary colours */
-  --bg-color: #0a0a0a;
-  --bg-color-light: #1a1a1a;
-  --bg-color-dark: #000000;
+  /* Tło */
+  --bg-color: #0d0d0d; /* Ciemne, niemal czarne tło */
+  --bg-color-light: #1a1a1a; /* Jaśniejszy odcień czerni */
+  --bg-color-dark: #080808; /* Głębsza czerń */
 
-  --accent-purple: #9b4dff;
-  --accent-purple-light: #bb6eff;
-  --accent-purple-dark: #7a2bff;
+  /* Akcenty czerwieni */
+  --accent-red: #b22222; /* Nasycona, ciemna czerwień */
+  --accent-red-light: #d32f2f; /* Jaśniejszy akcent czerwieni */
+  --accent-red-dark: #8b1a1a; /* Głęboka, krwista czerwień */
 
-  --accent-pink: #ff00ff;
-  --accent-pink-light: #ff33ff;
-  --accent-pink-dark: #cc00cc;
+  /* Tekst */
+  --text-primary: #e0e0e0; /* Jasnoszary tekst */
+  --text-primary-light: #ffffff; /* Czysta biel */
+  --text-primary-dark: #b0b0b0; /* Ciemny szary tekst */
 
-  /* Text */
-  --text-primary: #e0e0e0;
-  --text-primary-light: #ffffff;
-  --text-primary-dark: #b0b0b0;
+  /* Hover i efekty */
+  --hover-red: #ff4c4c; /* Jasna czerwień na hover */
+  --active-red: #c62828; /* Intensywna, elegancka czerwień */
+  --shadow-red: rgba(178, 34, 34, 0.5); /* Czerwony cień */
+  --shadow-red-hover: rgba(215, 38, 56, 0.7);
 
-  /* Box-shadows */
-  --box-shadow-dark: rgba(0, 0, 0, 0.5);
-  --box-shadow-dark-light: rgba(0, 0, 0, 0.3);
-  --box-shadow-dark-dark: rgba(0, 0, 0, 0.7);
-
-  --box-shadow-accent: rgba(155, 77, 255, 0.8);
-  --box-shadow-accent-light: rgba(187, 110, 255, 0.8);
-  --box-shadow-accent-dark: rgba(122, 43, 255, 0.8);
-
-  /* Buttons */
-  --button-bg: #9b4dff;
-  --button-bg-light: #bb6eff;
-  --button-bg-dark: #7a2bff;
-  --button-text: #0a0a0a;
-  --button-text-light: #1a1a1a;
-  --button-text-dark: #000000;
-  --button-box-shadow: rgba(155, 77, 255, 0.5);
-  --button-box-shadow-light: rgba(187, 110, 255, 0.5);
-  --button-box-shadow-dark: rgba(122, 43, 255, 0.5);
-
-  /* Form / Inputs */
-  --input-bg: #1a1a1a;
-  --input-bg-light: #2a2a2a;
-  --input-bg-dark: #0a0a0a;
-  --input-border: 2px solid #9b4dff;
-  --input-border-light: 2px solid #bb6eff;
-  --input-border-dark: 2px solid #7a2bff;
-  --input-text: #e0e0e0;
-  --input-text-light: #ffffff;
-  --input-text-dark: #b0b0b0;
-  --input-focus-border: #ff00ff;
-  --input-focus-border-light: #ff33ff;
-  --input-focus-border-dark: #cc00cc;
+  /* Box-shadow */
+  --box-shadow-dark: rgba(0, 0, 0, 0.5); /* Ciemny cień */
+  --box-shadow-soft: rgba(13, 13, 13, 0.8); /* Subtelny cień w czerni */
+  --box-shadow-accent: rgba(178, 34, 34, 0.6); /* Akcentowy cień czerwieni */
+  --box-shadow-dark: rgba(0, 0, 0, 0.5); /* Ciemny cień */
+  --box-shadow-dark-hover: rgba(0, 0, 0, 0.7); /* Ciemniejszy cień na hover */
+  --box-shadow-accent: rgba(178, 34, 34, 0.6); /* Akcentowy cień czerwieni */
+  --box-shadow-accent-hover: rgba(
+    215,
+    38,
+    56,
+    0.8
+  ); /* Jaśniejszy cień na hover */
 }
 
 *,
@@ -71,7 +54,7 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
 
-  color: var(--input-text);
+  color: var(--text-primary);
   background-color: var(--bg-color);
 }
 

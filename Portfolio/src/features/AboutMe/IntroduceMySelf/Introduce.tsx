@@ -1,5 +1,8 @@
 import styles from "./Introduce.module.css";
 
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
 function Introduce() {
   return (
     <div className={styles.introduce_wrapper}>
@@ -8,10 +11,19 @@ function Introduce() {
           src="/public/test-photo.jpg"
           alt="Photo of Maciej Nojszewski, dark hair, blue eyes"
         />
+
+        <div className={styles.socials}>
+          <FaGithub />
+          <FaLinkedin />
+        </div>
       </div>
 
       <div className={styles.introduce_box}>
         <h3 className={styles.introduce_header}>Hi, I'm Maciej Nojszewski</h3>
+        <div className={styles.hr_box}>
+          <hr className={styles.line_hr} />
+          <div className={styles.cube}>Cube</div>
+        </div>
         <p className={styles.introduce_text}>
           I'm an aspiring frontend React developer from Grębków, Poland and an
           IT student at WIT Academy in Warsaw.

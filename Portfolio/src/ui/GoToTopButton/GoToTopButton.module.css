@@ -25,11 +25,19 @@
   svg {
     width: 1.5em;
     height: 1.5em;
+
+    transition: color 0.4s;
   }
 }
 
 .button:hover {
   color: var(--text-primary-light);
 
-  border: 2px solid var(--accent-purple-dark);
+  border: 2px solid var(--hover-red);
+}
+
+.button:hover {
+  svg {
+    color: var(--hover-red);
+  }
 }

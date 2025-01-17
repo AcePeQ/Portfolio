@@ -24,7 +24,7 @@
 
 .navigation_link:hover,
 .navigation_link:active {
-  color: var(--accent-purple);
+  color: var(--hover-red);
 }
 
 .navigation_link::after {
@@ -46,5 +46,5 @@
   width: 100%;
   left: 0;
 
-  background-color: var(--accent-purple);
+  background-color: var(--hover-red);
 }

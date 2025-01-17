@@ -6,7 +6,7 @@ function Logo() {
   return (
     <div className={styles.logo}>
       <Link to="/" className={styles.logo_link}>
-        Maciej Nojszewski
+        MN
       </Link>
     </div>
   );

@@ -1,6 +1,6 @@
 .aboutme_wrapper {
   height: 100%;
-  max-width: 120rem;
+  max-width: 105rem;
   width: 100%;
 
   margin: 0 auto;
@@ -12,5 +12,11 @@
 
   border: 2px solid var(--bg-color);
 
-  box-shadow: 0 0 3rem var(--accent-purple-dark);
+  & > div {
+    margin-bottom: 5rem;
+  }
+
+  & > div:last-child {
+    margin-bottom: 0;
+  }
 }
