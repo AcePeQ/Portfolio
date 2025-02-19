@@ -1,12 +1,12 @@
-import styles from "./GoToTopButton.module.css";
+import Button from "../Button/Button";
 
 import { HiArrowUpCircle } from "react-icons/hi2";
 
 function GoToTopButton() {
   return (
-    <button className={styles.button}>
+    <Button type="outline-primary-icon" onClick={() => {}}>
       Go To Top <HiArrowUpCircle />
-    </button>
+    </Button>
   );
 }
 

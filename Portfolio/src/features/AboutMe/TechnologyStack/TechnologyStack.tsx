@@ -13,9 +13,9 @@ const technologyUsed = [
 
 function TechnologyStack() {
   return (
-    <div className={styles.technology_stacks}>
+    <section className={styles.technology_stacks}>
       <div className={styles.technology_used}>
-        <h3 className={styles.technology_title}>Technologies I've used</h3>
+        <h2 className={styles.technology_title}>Technologies I've used</h2>
         <ul className={styles.technologies_list}>
           {technologyUsed.map((technology) => (
             <TechnologyItem technology={technology} />
@@ -24,12 +24,12 @@ function TechnologyStack() {
       </div>
 
       <div className={styles.technology_learn}>
-        <h3 className={styles.technology_title}>
+        <h2 className={styles.technology_title}>
           Technologies I want to learn
-        </h3>
+        </h2>
         <ul className={styles.technologies_list}>Essa2</ul>
       </div>
-    </div>
+    </section>
   );
 }
 

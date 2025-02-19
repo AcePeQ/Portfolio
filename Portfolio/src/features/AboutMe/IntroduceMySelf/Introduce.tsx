@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 function Introduce() {
   return (
-    <div className={styles.introduce_wrapper}>
+    <section className={styles.introduce_wrapper}>
       <div className={styles.image_box}>
         <img
           src="/public/test-photo.jpg"
@@ -19,7 +19,7 @@ function Introduce() {
       </div>
 
       <div className={styles.introduce_box}>
-        <h3 className={styles.introduce_header}>Hi, I'm Maciej Nojszewski</h3>
+        <h1 className={styles.introduce_header}>Hi, I'm Maciej Nojszewski</h1>
         <div className={styles.hr_box}>
           <hr className={styles.line_hr} />
           <div className={styles.cube}>Cube</div>
@@ -35,7 +35,7 @@ function Introduce() {
           into the world of programming to learn more.
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 

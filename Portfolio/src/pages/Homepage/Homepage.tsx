@@ -3,9 +3,9 @@ import Hero from "../../ui/Hero/Hero";
 
 function Homepage() {
   return (
-    <div className={styles.homepage}>
+    <section className={styles.homepage}>
       <Hero />
-    </div>
+    </section>
   );
 }
 

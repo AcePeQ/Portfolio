@@ -8,15 +8,15 @@
   border: 2px solid var();
 
   border-radius: 6px;
-  padding: 3rem 5rem;
+  padding: 3rem 0;
 
   border: 2px solid var(--bg-color);
 
-  & > div {
-    margin-bottom: 5rem;
+  & > section {
+    margin-bottom: 7.5rem;
   }
 
-  & > div:last-child {
+  & > section:last-child {
     margin-bottom: 0;
   }
 }

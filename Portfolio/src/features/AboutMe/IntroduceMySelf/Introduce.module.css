@@ -52,7 +52,9 @@
   .introduce_text {
     font-size: 2rem;
     font-weight: 500;
-    margin-top: rem;
+    text-align: justify;
+
+    max-width: 65ch;
   }
 
   .hr_box {

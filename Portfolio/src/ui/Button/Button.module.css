@@ -1,11 +1,11 @@
 .button {
-  display: inline-block;
+  display: flex;
   cursor: pointer;
 
   border: none;
   font-size: 2rem;
 
-  padding: 0.5rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   font-weight: 600;
 
   transition: all 0.4s;
@@ -13,37 +13,24 @@
   border-radius: 4px;
 }
 
-.primary-animated {
-  background-color: var(--accent-red);
-  color: var(--text-primary);
+.outline-primary-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 
-  box-shadow: 0 0.5rem 1.5rem var(--shadow-red);
+  background: none;
+  color: white;
+  border: 2px solid red;
+  border-radius: 100px;
+
+  svg {
+    width: 3.2rem;
+    height: 3.2rem;
+    vertical-align: middle;
+    color: white;
+  }
 }
 
-.primary-animated:hover {
-  color: var(--text-primary-light);
-  background-color: var(--hover-red);
-  box-shadow: 0 1rem 2rem var(--shadow-red-hover);
-
-  transform: translateY(-2px);
-}
-
-.primary-animated:active {
-  color: var(--text-primary-light);
-  transform: translateY(0px);
-  box-shadow: 0 0.5rem 1.5rem var(--shadow-red);
-}
-
-.primary {
-  background-color: var(--accent-red);
-  color: var(--text-primary);
-
-  box-shadow: 0 0.5rem 1.5rem var(--shadow-red);
-}
-
-.primary:hover {
-  background-color: var(--hover-red);
-  color: var(--text-primary-light);
-
-  box-shadow: 0 0.5rem 1.5rem var(--shadow-red-hover);
+.outline-primary {
 }

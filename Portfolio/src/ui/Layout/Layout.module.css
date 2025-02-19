@@ -5,8 +5,8 @@
 
   position: relative;
 
-  margin-top: 6.2rem;
-  min-height: calc(100dvh - 6.2rem);
+  margin-top: 72px;
+  min-height: calc(100dvh - 72px);
 }
 
 .main {

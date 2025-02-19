@@ -1,4 +1,4 @@
-import { MouseEventHandler } from "react";
+import { MouseEventHandler, ReactNode } from "react";
 import styles from "./Button.module.css";
 
 function Button({
@@ -6,7 +6,7 @@ function Button({
   type,
   onClick,
 }: {
-  children: string;
+  children: ReactNode;
   type: string;
   onClick: MouseEventHandler;
 }) {
