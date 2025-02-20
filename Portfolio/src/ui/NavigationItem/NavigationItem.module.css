@@ -17,14 +17,18 @@
 
 .navigation_link:link,
 .navigation_link:visited {
-  color: var(--text-primary);
+  color: var(--text-primary-light);
 
   transition: all 0.4s;
 }
 
 .navigation_link:hover,
-.navigation_link:active {
+.navigation_link:focus {
   color: var(--hover-red);
+}
+
+.navigation_link:active {
+  color: var(--active-red);
 }
 
 .navigation_link::after {
@@ -37,7 +41,7 @@
   width: 0%;
   height: 3px;
 
-  background-color: var(--text-primary);
+  background-color: var(--text-primary-light);
 
   transition: all 0.4s;
 }
@@ -47,4 +51,28 @@
   left: 0;
 
   background-color: var(--hover-red);
+}
+
+.navigation_link:active:after {
+  width: 100%;
+  left: 0;
+
+  background-color: var(--active-red);
+}
+
+.navigation_link:global(.active) {
+  color: var(--active-red);
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: var(--active-red);
+  }
 }

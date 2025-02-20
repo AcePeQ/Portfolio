@@ -1,6 +1,6 @@
-import { Link, NavLink } from "react-router";
 import styles from "./NavigationItem.module.css";
 import { NavItemType } from "../../utils/types";
+import { Link, NavLink } from "react-router";
 
 function NavigationItem({
   navItem,
