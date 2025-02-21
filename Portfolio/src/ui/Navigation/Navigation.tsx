@@ -15,7 +15,7 @@ const linkItems = [
 
 function Navigation() {
   return (
-    <nav className={styles.navigation}>
+    <nav role="navigation-primary" className={styles.navigation}>
       <ul className={styles.navigation_list}>
         {linkItems.map((navItem) => (
           <NavigationItem key={navItem.link_name} navItem={navItem} />

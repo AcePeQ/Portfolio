@@ -1,11 +1,12 @@
 .footer {
-  height: 9rem;
-  padding: 2rem 5rem;
-
-  border-top: 2px solid var(--text-primary);
+  padding: 2.5rem 5rem;
 
   display: flex;
   align-items: center;
 
   justify-content: space-between;
+
+  & > * {
+    width: 23rem;
+  }
 }

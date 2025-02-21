@@ -11,7 +11,7 @@ const linkItems = [
 
 function NavigationFooter() {
   return (
-    <nav className={styles.navigation}>
+    <nav role="secondary-navigation-socials" className={styles.navigation}>
       <ul className={styles.navigation_list}>
         {linkItems.map((navItem) => (
           <NavigationItem

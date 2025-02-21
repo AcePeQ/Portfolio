@@ -11,7 +11,11 @@ function Button({
   onClick: MouseEventHandler;
 }) {
   return (
-    <button onClick={onClick} className={`${styles.button} ${styles[type]} `}>
+    <button
+      role="button"
+      onClick={onClick}
+      className={`${styles.button} ${styles[type]} `}
+    >
       {children}
     </button>
   );

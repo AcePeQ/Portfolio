@@ -7,7 +7,7 @@ function Layout() {
   const location = useLocation();
 
   return (
-    <div className={styles.layout}>
+    <div role="layout" aria-label="layout" className={styles.layout}>
       <Header />
       <main className={styles.main}>
         <Outlet />

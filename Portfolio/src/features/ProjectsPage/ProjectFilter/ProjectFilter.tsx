@@ -9,7 +9,9 @@ function ProjectFilter({ filter }: { filter: ProjectFilterType }) {
         alt={`icon of ${filter.name}`}
         className={styles.icon}
       />
-      <span className={styles.filter_name}>{filter.name}</span>
+      <span role="filter-name" className={styles.filter_name}>
+        {filter.name}
+      </span>
     </button>
   );
 }

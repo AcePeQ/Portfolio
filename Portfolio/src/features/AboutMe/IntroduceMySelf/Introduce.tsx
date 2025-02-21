@@ -10,6 +10,7 @@ function Introduce() {
         <img
           src="/public/test-photo.jpg"
           alt="Photo of Maciej Nojszewski, dark hair, blue eyes"
+          title="Photo of myself"
         />
 
         <div className={styles.socials}>
