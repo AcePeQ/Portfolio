@@ -1,0 +1,41 @@
+.filter {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+  background-color: var(--bg-color-light);
+  color: var(--text-primary-light);
+
+  padding: 0.75rem 1.5rem;
+  border-radius: 100rem;
+
+  border: none;
+
+  cursor: pointer;
+
+  box-shadow: 0 0 8px var(--box-shadow-soft);
+
+  transition: all 0.4s;
+}
+
+.filter:hover {
+  box-shadow: 0 0 8px var(--shadow-red);
+}
+
+.filter:hover,
+.filter:active .filter:focus,
+.filter:focus-within {
+  background-color: var(--accent-red);
+  color: var(--text-primary-light);
+}
+
+.icon {
+  width: 3.2rem;
+}
+
+.filter_name {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+}

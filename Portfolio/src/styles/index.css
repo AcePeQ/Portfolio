@@ -4,6 +4,11 @@
   --bg-color-light: #1a1a1a; /* Jaśniejszy odcień czerni */
   --bg-color-dark: #080808; /* Głębsza czerń */
 
+  --bg-color-dark-2: #07070748;
+
+  --filter-bg: #2a2a2a;
+  --filter-hover: #fff;
+
   /* Akcenty czerwieni */
   --accent-red: #b22222; /* Nasycona, ciemna czerwień */
   --accent-red-light: #d32f2f; /* Jaśniejszy akcent czerwieni */
@@ -13,6 +18,10 @@
   --text-primary: #e0e0e0; /* Jasnoszary tekst */
   --text-primary-light: #ffffff; /* Czysta biel */
   --text-primary-dark: #b0b0b0; /* Ciemny szary tekst */
+
+  --text-dark: #0d0d0d; /* Ciemne, niemal czarne tło */
+  --text-dark-light: #1a1a1a; /* Jaśniejszy odcień czerni */
+  --text-dark-dark: #080808; /* Głębsza czerń */
 
   /* Hover i efekty */
   --hover-red: #ff4c4c; /* Jasna czerwień na hover */

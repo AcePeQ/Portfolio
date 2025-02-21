@@ -3,3 +3,8 @@ export type NavItemType = {
   link_name: string;
   icon: JSX.Element;
 };
+
+export type ProjectFilterType = {
+  name: string;
+  src: string;
+};

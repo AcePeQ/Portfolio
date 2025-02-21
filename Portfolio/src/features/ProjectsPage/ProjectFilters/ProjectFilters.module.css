@@ -1,0 +1,13 @@
+.filters_wrapper {
+  max-width: 90rem;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 2rem;
+
+  margin-top: 4rem;
+}
