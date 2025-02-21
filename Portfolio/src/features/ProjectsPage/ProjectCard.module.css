@@ -8,7 +8,7 @@
   background-color: var(--bg-color-dark-2);
   border: 6px inset var(--bg-color-dark-2);
 
-  padding: 4.5rem;
+  padding: 3.5rem 4.5rem;
   border-radius: 12px;
 
   box-shadow: 6px 10px 6px var(--bg-color-dark-2);
@@ -19,10 +19,16 @@
 
   h2 {
     font-size: 4.2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
   }
 
   h3 {
     font-size: 2.8rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    color: var(--text-primary-dark);
   }
 }
 
@@ -40,24 +46,161 @@
 }
 
 .image:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .row_container {
   display: flex;
   flex-direction: column;
 
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 .row_header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.row_subtext {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: var(--text-primary-dark);
+
+  letter-spacing: 1px;
+}
+
+.row_main_text {
+  font-size: 2rem;
 }
 
 .description_wrapper {
   display: flex;
-  align-items: center;
+
   justify-content: space-between;
+
+  gap: 5rem;
+}
+
+.description_row {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5rem;
+}
+
+.description_title {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: var(--text-primary-dark);
+
+  letter-spacing: 1px;
+}
+
+.description {
+  font-size: 2rem;
+  max-width: 75ch;
+
+  text-align: justify;
+}
+
+.link_wrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.link {
+  color: var(--text-primary-light);
+
+  font-size: 4.8rem;
+
+  transition: all 0.4s;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--hover-red);
+}
+
+.link_page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 4.8rem;
+  height: 4.8rem;
+
+  border: 2px solid var(--text-primary-light);
+  border-radius: 50%;
+
+  svg {
+    font-size: 2.8rem;
+  }
+}
+
+.link_page:hover,
+.link_page:focus {
+  color: var(--hover-red);
+  border: 2px solid var(--hover-red);
+}
+
+.link:active {
+  color: var(--active-red);
+}
+
+.link_page:active {
+  border: 2px solid var(--active-red);
+}
+
+.tech_stack {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+}
+
+.technologies {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 2rem;
+}
+
+.technology {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+  background-color: var(--text-primary-light);
+  color: var(--bg-color-dark);
+
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+
+  box-shadow: 0 4px 6px var(--text-primary-light);
+
+  transition: all 0.4s;
+}
+
+.icon {
+  width: 3.2rem;
+}
+
+.filter_name {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+
+  user-select: none;
 }

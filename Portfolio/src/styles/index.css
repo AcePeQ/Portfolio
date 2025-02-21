@@ -48,6 +48,20 @@
   --scrollbar-thumb-hover: #ececec;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-bg);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-hover);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
+}
+
 *,
 *::after,
 *::before {
@@ -67,7 +81,7 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
 
-  color: var(--text-primary);
+  color: var(--text-primary-light);
   background-color: var(--bg-color);
 }
 
