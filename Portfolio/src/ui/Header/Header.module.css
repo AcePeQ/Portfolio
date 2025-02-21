@@ -13,7 +13,6 @@
   padding: 0.5rem 5rem 1rem;
 
   background-color: var(--bg-color);
-  border-bottom: 2px solid var(--text-primary);
 
   z-index: 9999;
 }

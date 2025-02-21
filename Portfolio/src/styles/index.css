@@ -33,6 +33,10 @@
     56,
     0.8
   ); /* Jaśniejszy cień na hover */
+
+  --scrollbar-bg: #121212;
+  --scrollbar-thumb: #f8f8f8;
+  --scrollbar-thumb-hover: #ececec;
 }
 
 *,
