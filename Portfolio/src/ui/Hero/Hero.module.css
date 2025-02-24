@@ -89,6 +89,57 @@
   margin-bottom: 3rem;
 }
 
+.buttons_wrapper {
+  display: flex;
+  align-items: center;
+
+  gap: 5rem;
+}
+
+.contact_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.5rem;
+  font-size: 2rem;
+
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+
+  border-radius: 4px;
+  transition: all 0.4s;
+
+  max-width: 15.2rem;
+  width: 100%;
+}
+
+.contact_button:link,
+.contact_button:visited {
+  /* background-color: var(--accent-red); */
+  border: 2px solid var(--bg-color-light);
+  color: var(--text-primary-light);
+}
+
+.contact_button:hover,
+.contact_button:focus {
+  background-color: var(--hover-red);
+  color: var(--text-primary);
+
+  border: 2px solid transparent;
+
+  box-shadow: 0 6px 12px var(--shadow-red-hover);
+}
+
+.contact_button:active {
+  background-color: var(--active-red);
+  color: var(--text-primary-light);
+
+  border: 2px solid transparent;
+
+  box-shadow: 0 6px 12px var(--shadow-red);
+}
+
 @keyframes colorSwap {
   to {
     background-position: 200%;

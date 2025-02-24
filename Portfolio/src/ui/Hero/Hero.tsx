@@ -25,7 +25,12 @@ function Hero() {
         modern websites
       </p>
 
-      <DownloadButton>Resume</DownloadButton>
+      <div className={styles.buttons_wrapper}>
+        <DownloadButton>Resume</DownloadButton>
+        <a className={styles.contact_button} href="#" target="_blank">
+          Contact
+        </a>
+      </div>
     </div>
   );
 }

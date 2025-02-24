@@ -12,7 +12,8 @@
   border-radius: 4px;
   transition: all 0.4s;
 
-  width: max-content;
+  max-width: 15.2rem;
+  width: 100%;
 
   svg {
     width: 1.2em;
@@ -25,6 +26,8 @@
 .download_button:visited {
   background-color: var(--accent-red);
   color: var(--text-primary-light);
+
+  border: 2px solid transparent;
 
   box-shadow: 0 6px 12px var(--shadow-red);
 }
