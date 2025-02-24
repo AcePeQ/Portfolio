@@ -7,10 +7,10 @@ type TechnologyItemType = {
 
 function TechnologyItem({ technology }: { technology: TechnologyItemType }) {
   return (
-    <li className={styles.list_item}>
+    <li className={styles.list_item} data-technology={`${technology.label}`}>
       <img
         className={styles.technology_icon}
-        src={`/technologyIcons/${technology.src}`}
+        src={`/svgIcons/${technology.src}`}
         alt={`Icon of ${technology.label}`}
       />
     </li>

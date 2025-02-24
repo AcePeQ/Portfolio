@@ -7,6 +7,32 @@
   justify-content: space-between;
 
   & > * {
-    width: 23rem;
+    width: 27rem;
   }
+}
+
+.link_wrapper {
+  p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.link:link,
+.link:visited {
+  color: inherit;
+  font-weight: 500;
+
+  transition: all 0.4s;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--hover-red);
+}
+
+.link:active {
+  color: var(--active-red);
 }

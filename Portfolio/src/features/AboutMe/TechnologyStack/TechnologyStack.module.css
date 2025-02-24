@@ -9,7 +9,7 @@
   font-size: 2.8rem;
   text-align: center;
 
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 
 .technologies_list {
@@ -19,5 +19,41 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  gap: 6.5rem;
+  gap: 4rem;
+
+  & > li:nth-child(odd) {
+    animation: upAnimation 1.5s ease-in-out infinite normal;
+  }
+
+  & > li:nth-child(even) {
+    animation: downAnimation 1.5s ease-in-out infinite normal;
+  }
+}
+
+@keyframes upAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes downAnimation {
+  0% {
+    transform: translateY(-6px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-6px);
+  }
 }

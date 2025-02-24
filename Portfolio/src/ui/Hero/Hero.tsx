@@ -14,7 +14,7 @@ function Hero() {
         </span>
         <br />
         <span role="profession container" className={styles.profession}>
-          I'm a
+          I'm a {`\n`}
           <span role="text highlight" className={styles.highlight}>
             Frontend Developer
           </span>

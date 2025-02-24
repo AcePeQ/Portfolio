@@ -1,27 +1,66 @@
-.technology_icon {
-  width: 6.8rem;
-}
-
 .list_item {
   cursor: pointer;
-  animation: upAndDownAnimation 1.5s ease-in-out infinite normal;
-  transition: scale 0.4s;
+  transition: all 0.4s;
+
+  position: relative;
+  user-select: none;
+}
+
+.list_item::before,
+.list_item::after {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.list_item::before {
+  position: absolute;
+  content: attr(data-technology);
+
+  top: -40px;
+  left: 50%;
+
+  white-space: nowrap;
+
+  transform: translateX(-50%);
+
+  background-color: var(--text-primary-light);
+  color: var(--bg-color);
+
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.list_item::after {
+  position: absolute;
+  content: "";
+
+  width: 20px;
+  height: 20px;
+
+  top: -25px;
+  z-index: -1;
+
+  background-color: var(--text-primary-light);
+
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+
+  transition: opacity 0.4s;
 }
 
 .list_item:hover {
   scale: 1.1;
 }
 
-@keyframes upAndDownAnimation {
-  0% {
-    transform: translateY(0px);
-  }
+.list_item:hover::after,
+.list_item:hover::before {
+  visibility: visible;
+  pointer-events: initial;
+}
 
-  50% {
-    transform: translateY(-6px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
+.technology_icon {
+  width: 8.4rem;
 }

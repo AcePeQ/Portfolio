@@ -21,10 +21,7 @@ function Introduce() {
 
       <div className={styles.introduce_box}>
         <h1 className={styles.introduce_header}>Hi, I'm Maciej Nojszewski</h1>
-        <div className={styles.hr_box}>
-          <hr className={styles.line_hr} />
-          <div className={styles.cube}>Cube</div>
-        </div>
+
         <p className={styles.introduce_text}>
           I'm an aspiring frontend React developer from Grębków, Poland and an
           IT student at WIT Academy in Warsaw.
