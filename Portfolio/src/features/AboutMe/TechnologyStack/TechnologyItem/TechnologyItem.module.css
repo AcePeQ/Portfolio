@@ -4,6 +4,14 @@
 
   position: relative;
   user-select: none;
+
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(13.2px);
+  -webkit-backdrop-filter: blur(13.2px);
+
+  padding: 0.5rem;
 }
 
 .list_item::before,
@@ -23,8 +31,9 @@
 
   transform: translateX(-50%);
 
-  background-color: var(--text-primary-light);
-  color: var(--bg-color);
+  color: var(--text-primary-light);
+
+  background: rgba(255, 255, 255, 0.05);
 
   padding: 0.25rem 0.5rem;
   border-radius: 6px;
@@ -40,13 +49,15 @@
   width: 20px;
   height: 20px;
 
-  top: -25px;
+  top: -21px;
   z-index: -1;
 
-  background-color: var(--text-primary-light);
+  background: rgba(255, 255, 255, 0.05);
 
   left: 50%;
-  transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%);
+
+  clip-path: polygon(100% 50%, 0 50%, 50% 100%);
 
   transition: opacity 0.4s;
 }
