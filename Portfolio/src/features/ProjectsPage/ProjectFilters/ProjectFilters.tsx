@@ -4,10 +4,19 @@ import styles from "./ProjectFilters.module.css";
 function ProjectFilters() {
   return (
     <div className={styles.filters_wrapper}>
-      <ProjectFilter filter={{ name: "HTML", src: "html" }} />
-      <ProjectFilter filter={{ name: "CSS", src: "css" }} />
-      <ProjectFilter filter={{ name: "JavaScript", src: "js" }} />
-      <ProjectFilter filter={{ name: "React", src: "react" }} />
+      <ProjectFilter
+        onClick={() => {}}
+        filter={{ name: "HTML", src: "html" }}
+      />
+      <ProjectFilter onClick={() => {}} filter={{ name: "CSS", src: "css" }} />
+      <ProjectFilter
+        onClick={() => {}}
+        filter={{ name: "JavaScript", src: "js" }}
+      />
+      <ProjectFilter
+        onClick={() => {}}
+        filter={{ name: "React", src: "react" }}
+      />
     </div>
   );
 }

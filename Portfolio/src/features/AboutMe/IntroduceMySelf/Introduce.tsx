@@ -8,14 +8,18 @@ function Introduce() {
     <section className={styles.introduce_wrapper}>
       <div className={styles.image_box}>
         <img
-          src="/public/face3.jpg"
+          src="/face3.jpg"
           alt="Photo of Maciej Nojszewski, dark hair, blue eyes"
           title="Photo of myself"
         />
 
         <div className={styles.socials}>
-          <FaGithub />
-          <FaLinkedin />
+          <a href="#" target="_blank">
+            <FaGithub />
+          </a>
+          <a href="#" target="_blank">
+            <FaLinkedin />
+          </a>
         </div>
       </div>
 

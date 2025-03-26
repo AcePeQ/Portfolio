@@ -9,7 +9,7 @@ function Homepage() {
       {/* <Planet /> */}
       <figure className={styles.img_box}>
         <img
-          src="/public/face.png"
+          src="/face.png"
           alt="photo of Maciej Nojszewski, illustration style, short dark/brown hair, blue eyes"
           className={styles.img}
         />

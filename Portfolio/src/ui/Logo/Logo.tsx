@@ -5,7 +5,7 @@ import styles from "./Logo.module.css";
 function Logo() {
   return (
     <div
-      role="logo container"
+      role="logo"
       aria-label="Logo of Maciej Nojszewski's portfolio"
       className={styles.logo}
     >

@@ -1,8 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router";
-import Layout from "./ui/Layout/Layout";
-import Homepage from "./pages/Homepage/Homepage";
-import AboutMePage from "./pages/AboutMePage/AboutMePage";
-import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
+import { lazy } from "react";
+
+const Layout = lazy(() => import("./ui/Layout/Layout"));
+const Homepage = lazy(() => import("./pages/Homepage/Homepage"));
+const AboutMePage = lazy(() => import("./pages/AboutMePage/AboutMePage"));
+const ProjectsPage = lazy(() => import("./pages/ProjectsPage/ProjectsPage"));
 
 function App() {
   return (

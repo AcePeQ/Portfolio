@@ -14,7 +14,7 @@ function Layout() {
   }, [location.pathname]);
 
   return (
-    <div role="layout" aria-label="layout" className={styles.layout}>
+    <div className={styles.layout}>
       <Header />
       <main className={styles.main}>
         <Outlet />
