@@ -9,15 +9,12 @@ const technologiesUsed = [
   { label: "TypeScript", src: "typescript.svg" },
   { label: "Bootstrap", src: "bootstrap.svg" },
   { label: "C#", src: "c-sharp.svg" },
-  { label: "MySql", src: "mysql.svg" },
-];
-
-const technologiesPlanToLearn = [
   { label: "Node JS", src: "nodejs-2.svg" },
-  { label: "Next JS", src: "nextjs.png" },
-  { label: "Mango DB", src: "mangodb.svg" },
+  { label: "Mongo DB", src: "mongodb.svg" },
   { label: "Tailwind CSS", src: "tailwind.svg" },
 ];
+
+const technologiesPlanToLearn = [{ label: "Next JS", src: "nextjs.png" }];
 
 const toolsUsed = [
   { label: "VS Code", src: "vscode.svg" },

@@ -1,6 +1,6 @@
 import Introduce from "../../features/AboutMe/IntroduceMySelf/Introduce";
 import TechnologyStack from "../../features/AboutMe/TechnologyStack/TechnologyStack";
-import Cube3D from "../../features/Cube3D/Cube3D";
+// import Cube3D from "../../features/Cube3D/Cube3D";
 import GitHubContribution from "../../features/GitHubContribution/GitHubContribution";
 import styles from "./AboutMePage.module.css";
 
@@ -10,7 +10,7 @@ function AboutMePage() {
       <Introduce />
       <TechnologyStack />
       <GitHubContribution />
-      <Cube3D />
+      {/* <Cube3D /> */}
     </section>
   );
 }

@@ -8,7 +8,11 @@ function Homepage() {
       <Hero />
       {/* <Planet /> */}
       <figure className={styles.img_box}>
-        <img src="/public/face.png" className={styles.img} />
+        <img
+          src="/public/face.png"
+          alt="photo of Maciej Nojszewski, illustration style, short dark/brown hair, blue eyes"
+          className={styles.img}
+        />
       </figure>
     </section>
   );

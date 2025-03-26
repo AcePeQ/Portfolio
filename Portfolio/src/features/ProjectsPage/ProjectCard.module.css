@@ -6,7 +6,7 @@
   height: 100%;
 
   background-color: var(--bg-color-dark-2);
-  border: 6px inset var(--bg-color-dark-2);
+  border: 6px outset var(--bg-color-dark-2);
 
   padding: 3.5rem 4.5rem;
   border-radius: 12px;
@@ -35,8 +35,10 @@
 .image_wrapper {
   margin-bottom: 5rem;
 
-  border: 6px inset var(--bg-color-dark-2);
+  border: 6px outset var(--bg-color-dark-2);
   border-radius: 12px;
+
+  box-shadow: 6px 10px 6px var(--bg-color-dark-2);
 
   overflow: hidden;
 
