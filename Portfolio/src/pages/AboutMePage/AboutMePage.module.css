@@ -5,11 +5,7 @@
 
   margin: 0 auto;
 
-  border: 2px solid var();
-
   border-radius: 6px;
-
-  border: 2px solid var(--bg-color);
 
   & > section {
     margin-bottom: 7.5rem;
