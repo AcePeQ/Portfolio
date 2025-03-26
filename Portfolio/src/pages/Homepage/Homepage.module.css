@@ -1,3 +1,9 @@
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
 .homepage {
   height: 100%;
   width: 100%;
@@ -5,4 +11,59 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.img_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+
+  position: relative;
+}
+
+.img {
+  border-radius: 100rem;
+  position: relative;
+
+  filter: drop-shadow(0 0 6px #fff);
+}
+
+.img_box::after,
+.img_box::before {
+  content: "";
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 65rem;
+  height: 73rem;
+
+  border-radius: 50%;
+
+  background: conic-gradient(
+    from var(--angle),
+    transparent 50%,
+    var(--accent-red)
+  );
+  z-index: -1;
+  animation: 8s spin linear infinite;
+}
+
+.img_box::after {
+  filter: blur(3rem);
+  opacity: 0.8;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
 }

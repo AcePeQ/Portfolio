@@ -6,10 +6,10 @@ import { Suspense, useRef } from "react";
 function Planet() {
   return (
     <div className={styles.canvas_container}>
-      <Canvas camera={{ position: [5, 0, 0] }}>
+      <Canvas>
         <Suspense fallback={null}>
-          <ambientLight intensity={1} />
-          <directionalLight position={[0, -5, 10]} intensity={2} />
+          <ambientLight intensity={0.1} />
+          <directionalLight position={[-1, -1, 0]} intensity={2} />
 
           <PlanetMesh />
         </Suspense>
@@ -25,8 +25,9 @@ function PlanetMesh() {
 
   useFrame((state, delta) => {
     if (planetRef.current) {
-      planetRef.current.rotation.y += 0.001;
-      // planetRef.current.rotation.x += 0.001;
+      planetRef.current.rotation.y -= 0.001;
+      planetRef.current.rotation.z += 0.001;
+      planetRef.current.rotation.x += 0.001;
     }
   });
 
