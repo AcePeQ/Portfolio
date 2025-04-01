@@ -14,7 +14,7 @@ function ProjectCard() {
         <a className={styles.image_link} href="#" target="_blank">
           <img
             className={styles.image}
-            src="/public/fanatycy.png"
+            src="/public/projectImage/fanatycy.png"
             alt="main page of my project: [project name]"
           />
         </a>
