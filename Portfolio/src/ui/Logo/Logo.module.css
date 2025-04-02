@@ -65,3 +65,9 @@
     --angle: 360deg;
   }
 }
+
+@media screen and (max-width: 515px) {
+  .logo {
+    display: none;
+  }
+}

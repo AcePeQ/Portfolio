@@ -67,3 +67,64 @@
     --angle: 360deg;
   }
 }
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1175px) {
+  .img {
+    width: unset;
+  }
+
+  .img_box::after,
+  .img_box::before {
+    width: 65rem;
+    height: 73rem;
+  }
+
+  .homepage {
+    flex-direction: column;
+    gap: 12.5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .homepage {
+    gap: 8rem;
+  }
+
+  .img {
+    width: 65%;
+  }
+
+  .img_box::after,
+  .img_box::before {
+    width: 47.5rem;
+    height: 47.5rem;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .homepage {
+    gap: 9rem;
+  }
+
+  .img {
+    width: 65%;
+  }
+
+  .img_box::after,
+  .img_box::before {
+    width: 40rem;
+    height: 40rem;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .img_box::after,
+  .img_box::before {
+    width: 35rem;
+    height: 35rem;
+  }
+}

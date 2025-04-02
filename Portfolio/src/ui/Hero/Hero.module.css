@@ -145,3 +145,41 @@
     background-position: 200%;
   }
 }
+
+@media screen and (max-width: 660px) {
+  .name {
+    font-size: 5.4rem;
+  }
+
+  .profession {
+    font-size: 3.8rem;
+  }
+
+  .subtext {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .greeting {
+    font-size: 2.1rem;
+  }
+
+  .name {
+    font-size: 4.2rem;
+  }
+
+  .profession {
+    font-size: 3.2rem;
+    margin-top: 0.5rem;
+  }
+
+  .subtext {
+    text-align: justify;
+    font-size: 1.9rem;
+  }
+
+  .buttons_wrapper {
+    justify-content: space-between;
+  }
+}

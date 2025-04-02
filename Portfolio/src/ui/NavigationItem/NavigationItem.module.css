@@ -76,3 +76,14 @@
     background-color: var(--active-red);
   }
 }
+
+@media screen and (max-width: 405px) {
+  .navigation_link {
+    font-size: 1.8rem;
+
+    svg {
+      width: 1.2em;
+      height: 1.2em;
+    }
+  }
+}

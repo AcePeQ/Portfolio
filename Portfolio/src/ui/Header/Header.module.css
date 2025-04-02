@@ -12,9 +12,13 @@
 
   padding: 0.5rem 5rem 1rem;
 
-  /* background-color: var(--bg-color); */
-
   backdrop-filter: blur(2px);
 
   z-index: 9999;
+}
+
+@media screen and (max-width: 660px) {
+  .header {
+    padding: 0.5rem 2rem 1rem;
+  }
 }

@@ -13,3 +13,9 @@
   position: relative;
   margin: 3rem 5rem 0;
 }
+
+@media screen and (max-width: 660px) {
+  .main {
+    margin: 3rem 1.5rem 0;
+  }
+}
