@@ -1,10 +1,11 @@
 import styles from "./ProjectCard.module.css";
 import { FaGithub } from "react-icons/fa";
 import { IoArrowForwardOutline } from "react-icons/io5";
+import ProjectTechnology from "./ProjectTechnology/ProjectTechnology";
 
 function ProjectCard() {
   return (
-    <section role="project card" className={styles.project_wrapper}>
+    <section className={styles.project_wrapper}>
       <div className={styles.header}>
         <h2>Project Name</h2>
         <h3>Project Type</h3>
@@ -14,8 +15,9 @@ function ProjectCard() {
         <a className={styles.image_link} href="#" target="_blank">
           <img
             className={styles.image}
-            src="/public/projectImage/fanatycy.png"
+            src="/projectsImage/fanatycy.png"
             alt="main page of my project: [project name]"
+            loading="lazy"
           />
         </a>
       </div>
@@ -67,14 +69,12 @@ function ProjectCard() {
         <div className={styles.tech_stack}>
           <p className={styles.row_subtext}>Technologies</p>
           <div className={styles.technologies}>
-            <div className={styles.technology}>
-              <img
-                src={`/public/svgIcons/html.svg`}
-                alt={`icon of html`}
-                className={styles.icon}
-              />
-              <span className={styles.filter_name}>HTML</span>
-            </div>
+            <ProjectTechnology />
+            <ProjectTechnology />
+            <ProjectTechnology />
+            <ProjectTechnology />
+            <ProjectTechnology />
+            <ProjectTechnology />
           </div>
         </div>
       </div>

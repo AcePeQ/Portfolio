@@ -1,0 +1,21 @@
+.technology {
+  display: flex;
+  align-items: center;
+
+  gap: 0.75rem;
+
+  padding: 0.75rem 0;
+}
+
+.icon {
+  width: 3.2rem;
+}
+
+.filter_name {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+
+  user-select: none;
+}
