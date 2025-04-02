@@ -5,6 +5,6 @@ export type NavItemType = {
 };
 
 export type ProjectFilterType = {
-  name: string;
+  label: string;
   src: string;
 };

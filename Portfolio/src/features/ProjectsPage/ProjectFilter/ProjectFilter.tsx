@@ -11,12 +11,12 @@ function ProjectFilter({
   return (
     <button onClick={onClick} className={styles.filter}>
       <img
-        src={`/svgIcons/${filter.src}.svg`}
-        alt={`icon of ${filter.name}`}
+        src={`/svgIcons/${filter.src}`}
+        alt={`icon of ${filter.label}`}
         className={styles.icon}
       />
       <span role="filter-name" className={styles.filter_name}>
-        {filter.name}
+        {filter.label}
       </span>
     </button>
   );

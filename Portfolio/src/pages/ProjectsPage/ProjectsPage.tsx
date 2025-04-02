@@ -1,5 +1,6 @@
 import ProjectCard from "../../features/ProjectsPage/ProjectCard";
 import ProjectFilters from "../../features/ProjectsPage/ProjectFilters/ProjectFilters";
+import { projectArray } from "../../utils/projects";
 import styles from "./ProjectsPage.module.css";
 
 function ProjectsPage() {
@@ -11,7 +12,9 @@ function ProjectsPage() {
         <ProjectFilters />
 
         <div className={styles.projects}>
-          <ProjectCard />
+          {projectArray.map((project) => (
+            <ProjectCard key={project.project_name} project={project} />
+          ))}
         </div>
       </div>
     </section>

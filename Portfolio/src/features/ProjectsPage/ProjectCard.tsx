@@ -3,20 +3,37 @@ import { FaGithub } from "react-icons/fa";
 import { IoArrowForwardOutline } from "react-icons/io5";
 import ProjectTechnology from "./ProjectTechnology/ProjectTechnology";
 
-function ProjectCard() {
+export interface IProjectCard {
+  project_name: string;
+  project_type: string;
+  img_href: string;
+  type: string;
+  event: string;
+  year: number | string;
+  github_link: string;
+  page_link?: string;
+  description: string;
+  technologies: { label: string; img_path: string }[];
+}
+
+function ProjectCard({ project }: { project: IProjectCard }) {
   return (
     <section className={styles.project_wrapper}>
       <div className={styles.header}>
-        <h2>Project Name</h2>
-        <h3>Project Type</h3>
+        <h2>{project.project_name}</h2>
+        <h3>{project.project_type}</h3>
       </div>
 
       <div className={styles.image_wrapper}>
-        <a className={styles.image_link} href="#" target="_blank">
+        <a
+          className={styles.image_link}
+          href={project.page_link || project.github_link}
+          target="_blank"
+        >
           <img
             className={styles.image}
-            src="/projectsImage/fanatycy.png"
-            alt="main page of my project: [project name]"
+            src={project.img_href}
+            alt={`main page of project ${project.project_name}`}
             loading="lazy"
           />
         </a>
@@ -26,55 +43,48 @@ function ProjectCard() {
         <div className={styles.row_header}>
           <div>
             <p className={styles.row_subtext}>Type</p>
-            <p className={styles.row_main_text}>Website</p>
+            <p className={styles.row_main_text}>{project.type}</p>
           </div>
 
           <div>
             <p className={styles.row_subtext}>Event</p>
-            <p className={styles.row_main_text}>Side Project</p>
+            <p className={styles.row_main_text}>{project.event}</p>
           </div>
 
           <div>
             <p className={styles.row_subtext}>Year</p>
-            <p className={styles.row_main_text}>2024</p>
+            <p className={styles.row_main_text}>{project.year}</p>
           </div>
         </div>
 
         <div className={styles.description_wrapper}>
           <div className={styles.description_row}>
             <p className={styles.description_title}>Description</p>
-            <p className={styles.description}>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
-              provident veniam, quidem quasi modi earum obcaecati qui veritatis
-              debitis maxime, nihil tempora voluptatum sed! Sunt quod nobis
-              neque necessitatibus culpa? Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Consequatur laborum aliquid dolor
-              dolores ex sint delectus, repellendus deleniti nesciunt
-              exercitationem nulla voluptas, quis libero, aliquam eveniet aut
-              nihil? Placeat, necessitatibus.
-            </p>
+            <p className={styles.description}>{project.description}</p>
           </div>
 
           <div className={styles.link_wrapper}>
-            <a href="#" className={styles.link}>
+            <a href={project.github_link} className={styles.link}>
               <FaGithub />
             </a>
 
-            <a href="#" className={`${styles.link} ${styles.link_page}`}>
-              <IoArrowForwardOutline />
-            </a>
+            {project.page_link && (
+              <a
+                href={project.page_link}
+                className={`${styles.link} ${styles.link_page}`}
+              >
+                <IoArrowForwardOutline />
+              </a>
+            )}
           </div>
         </div>
 
         <div className={styles.tech_stack}>
           <p className={styles.row_subtext}>Technologies</p>
           <div className={styles.technologies}>
-            <ProjectTechnology />
-            <ProjectTechnology />
-            <ProjectTechnology />
-            <ProjectTechnology />
-            <ProjectTechnology />
-            <ProjectTechnology />
+            {project.technologies.map((techno) => (
+              <ProjectTechnology technology={techno} />
+            ))}
           </div>
         </div>
       </div>
