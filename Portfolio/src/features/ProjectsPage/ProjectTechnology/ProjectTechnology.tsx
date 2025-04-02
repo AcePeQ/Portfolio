@@ -3,12 +3,12 @@ import styles from "./ProjectTechnology.module.css";
 function ProjectTechnology({
   technology,
 }: {
-  technology: { label: string; img_path: string };
+  technology: { label: string; src: string };
 }) {
   return (
     <div className={styles.technology}>
       <img
-        src={technology.img_path}
+        src={technology.src}
         alt={`icon of ${technology.label}`}
         className={styles.icon}
         loading="lazy"

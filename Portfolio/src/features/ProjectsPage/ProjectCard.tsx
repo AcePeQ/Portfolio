@@ -13,7 +13,7 @@ export interface IProjectCard {
   github_link: string;
   page_link?: string;
   description: string;
-  technologies: { label: string; img_path: string }[];
+  technologies: { label: string; src: string }[];
 }
 
 function ProjectCard({ project }: { project: IProjectCard }) {
