@@ -24,7 +24,9 @@ function Introduce() {
       </div>
 
       <div className={styles.introduce_box}>
-        <h1 className={styles.introduce_header}>Hi, I'm Maciej Nojszewski</h1>
+        <h1 className={styles.introduce_header}>
+          Hi, I'm <span className={styles.no_break}>Maciej Nojszewski</span>
+        </h1>
 
         <p className={styles.introduce_text}>
           I'm an aspiring frontend React developer from Grębków, Poland and an
