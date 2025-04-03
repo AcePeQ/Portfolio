@@ -1,15 +1,9 @@
 import { ProjectFilterType } from "../../../utils/types";
 import styles from "./ProjectFilter.module.css";
 
-function ProjectFilter({
-  filter,
-  onClick,
-}: {
-  filter: ProjectFilterType;
-  onClick: () => void;
-}) {
+function ProjectFilter({ filter }: { filter: ProjectFilterType }) {
   return (
-    <button onClick={onClick} className={styles.filter}>
+    <button className={styles.filter}>
       <img
         src={`/svgIcons/${filter.src}`}
         alt={`icon of ${filter.label}`}

@@ -6,7 +6,7 @@ function ProjectFilters() {
   return (
     <div className={styles.filters_wrapper}>
       {technologiesUsed.map((tech) => (
-        <ProjectFilter key={tech.label} onClick={() => {}} filter={tech} />
+        <ProjectFilter key={tech.label} filter={tech} />
       ))}
     </div>
   );
