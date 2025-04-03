@@ -10,7 +10,11 @@ const linkItems = [
     link_name: "Github",
     icon: <FaGithub />,
   },
-  { redirect: "/aboutme", link_name: "LinkedIn", icon: <FaLinkedin /> },
+  {
+    redirect: "https://www.linkedin.com/in/maciej-nojszewski-81359a35a/",
+    link_name: "LinkedIn",
+    icon: <FaLinkedin />,
+  },
 ];
 
 function NavigationFooter() {

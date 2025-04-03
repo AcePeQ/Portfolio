@@ -17,7 +17,10 @@ function Introduce() {
           <a href="https://github.com/AcePeQ" target="_blank">
             <FaGithub />
           </a>
-          <a href="#" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/maciej-nojszewski-81359a35a/"
+            target="_blank"
+          >
             <FaLinkedin />
           </a>
         </div>

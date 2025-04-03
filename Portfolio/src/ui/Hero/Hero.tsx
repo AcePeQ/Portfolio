@@ -27,7 +27,11 @@ function Hero() {
 
       <div className={styles.buttons_wrapper}>
         <DownloadButton>Resume</DownloadButton>
-        <a className={styles.contact_button} href="#" target="_blank">
+        <a
+          className={styles.contact_button}
+          href="https://www.linkedin.com/in/maciej-nojszewski-81359a35a/"
+          target="_blank"
+        >
           Contact
         </a>
       </div>
