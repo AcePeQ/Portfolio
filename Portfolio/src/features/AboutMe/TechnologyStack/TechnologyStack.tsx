@@ -13,7 +13,7 @@ function TechnologyStack() {
         <h2 className={styles.technology_title}>Technologies I've used</h2>
         <ul className={styles.technologies_list}>
           {technologiesUsed.map((technology) => (
-            <TechnologyItem technology={technology} />
+            <TechnologyItem key={technology.label} technology={technology} />
           ))}
         </ul>
       </div>
@@ -22,7 +22,7 @@ function TechnologyStack() {
         <h2 className={styles.technology_title}>Tools I've used</h2>
         <ul className={styles.technologies_list}>
           {toolsUsed.map((technology) => (
-            <TechnologyItem technology={technology} />
+            <TechnologyItem key={technology.label} technology={technology} />
           ))}
         </ul>
       </div>
@@ -33,7 +33,7 @@ function TechnologyStack() {
         </h2>
         <ul className={styles.technologies_list}>
           {technologiesPlanToLearn.map((technology) => (
-            <TechnologyItem technology={technology} />
+            <TechnologyItem key={technology.label} technology={technology} />
           ))}
         </ul>
       </div>

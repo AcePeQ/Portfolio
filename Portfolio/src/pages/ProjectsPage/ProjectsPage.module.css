@@ -18,3 +18,11 @@
   flex-direction: column;
   gap: 5rem;
 }
+
+.notify {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 5rem;
+}

@@ -14,7 +14,7 @@ function Introduce() {
         />
 
         <div className={styles.socials}>
-          <a href="#" target="_blank">
+          <a href="https://github.com/AcePeQ" target="_blank">
             <FaGithub />
           </a>
           <a href="#" target="_blank">

@@ -11,7 +11,11 @@ function NavigationItem({
 }) {
   if (linkType === "footer") {
     <li className={styles.navigation_item}>
-      <Link className={styles.navigation_link} to={navItem.redirect}>
+      <Link
+        className={styles.navigation_link}
+        to={navItem.redirect}
+        target="_blank"
+      >
         {navItem.icon}
         {navItem.link_name}
       </Link>

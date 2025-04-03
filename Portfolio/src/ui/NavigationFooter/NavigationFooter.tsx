@@ -5,7 +5,11 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 const linkItems = [
-  { redirect: "/", link_name: "Github", icon: <FaGithub /> },
+  {
+    redirect: "https://github.com/AcePeQ",
+    link_name: "Github",
+    icon: <FaGithub />,
+  },
   { redirect: "/aboutme", link_name: "LinkedIn", icon: <FaLinkedin /> },
 ];
 

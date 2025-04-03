@@ -24,10 +24,9 @@
 }
 
 .filter:hover,
-.filter:active .filter:focus,
-.filter:focus-within {
-  background-color: var(--accent-red);
-  color: var(--text-primary-light);
+.filter:active {
+  background-color: var(--text-primary-light);
+  color: var(--bg-color);
 }
 
 .icon {
@@ -38,4 +37,9 @@
   display: inline-block;
   font-size: 2rem;
   font-weight: 600;
+}
+
+.active {
+  background-color: var(--text-primary-light);
+  color: var(--bg-color);
 }

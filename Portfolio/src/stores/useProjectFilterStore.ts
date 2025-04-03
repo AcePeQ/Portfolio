@@ -1,8 +1,8 @@
 import { create } from "zustand";
 
 interface IProjectFilter {
-  activeFilter: number | null;
-  setActiveFilter: (newActiveFilter: number | null) => void;
+  activeFilter: string | null;
+  setActiveFilter: (newActiveFilter: string | null) => void;
 }
 
 export const useProjectFilter = create<IProjectFilter>()((set) => ({

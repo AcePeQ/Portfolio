@@ -14,6 +14,7 @@ export interface IProjectCard {
   page_link?: string;
   description: string;
   technologies: { label: string; src: string }[];
+  technologiesUsed: string[];
 }
 
 function ProjectCard({ project }: { project: IProjectCard }) {
@@ -83,7 +84,7 @@ function ProjectCard({ project }: { project: IProjectCard }) {
           <p className={styles.row_subtext}>Technologies</p>
           <div className={styles.technologies}>
             {project.technologies.map((techno) => (
-              <ProjectTechnology technology={techno} />
+              <ProjectTechnology key={techno.label} technology={techno} />
             ))}
           </div>
         </div>
