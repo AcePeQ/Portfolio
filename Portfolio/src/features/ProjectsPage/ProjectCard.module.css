@@ -80,7 +80,8 @@
   transition: all 0.4s;
 }
 
-.image_link:hover::before {
+.image_link:hover::before,
+.image_link:focus::before {
   opacity: 1;
 }
 
@@ -150,6 +151,8 @@
 
   gap: 1.5rem;
   justify-content: space-between;
+
+  flex-shrink: 0;
 }
 
 .link {
