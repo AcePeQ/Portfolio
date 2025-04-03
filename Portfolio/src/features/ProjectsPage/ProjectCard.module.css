@@ -207,7 +207,7 @@
   flex-wrap: wrap;
 
   column-gap: 2.5rem;
-  row-gap: 0.5rem;
+  row-gap: 1rem;
 }
 
 @media screen and (max-width: 985px) {
