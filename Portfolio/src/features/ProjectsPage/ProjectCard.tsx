@@ -3,6 +3,8 @@ import { FaGithub } from "react-icons/fa";
 import { IoArrowForwardOutline } from "react-icons/io5";
 import ProjectTechnology from "./ProjectTechnology/ProjectTechnology";
 
+import { motion } from "motion/react";
+
 export interface IProjectCard {
   project_name: string;
   project_type: string;
@@ -19,7 +21,13 @@ export interface IProjectCard {
 
 function ProjectCard({ project }: { project: IProjectCard }) {
   return (
-    <section className={styles.project_wrapper}>
+    <motion.section
+      initial={{ opacity: 0, y: "100px" }}
+      transition={{ duration: 1.5, ease: "easeInOut" }}
+      whileInView={{ opacity: 1, y: "0" }}
+      viewport={{ once: true }}
+      className={styles.project_wrapper}
+    >
       <div className={styles.header}>
         <h2>{project.project_name}</h2>
         <h3>{project.project_type}</h3>
@@ -89,7 +97,7 @@ function ProjectCard({ project }: { project: IProjectCard }) {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

@@ -1,9 +1,16 @@
 import styles from "./Hero.module.css";
 import DownloadButton from "../DownloadButton/DownloadButton";
 
+import { motion } from "motion/react";
+
 function Hero() {
   return (
-    <div className={styles.hero_wrapper}>
+    <motion.div
+      initial={{ opacity: 0, x: "-50%" }}
+      animate={{ opacity: 1, x: "0%" }}
+      transition={{ duration: 2, type: "spring" }}
+      className={styles.hero_wrapper}
+    >
       <h1>
         <span role="greeting container" className={styles.greeting}>
           Hi, I'm
@@ -35,7 +42,7 @@ function Hero() {
           Contact
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
