@@ -116,7 +116,7 @@ export const projectArray = [
     event: "Side Project",
     year: 2025,
     github_link: "https://github.com/AcePeQ/Portfolio/tree/main/Portfolio",
-    page_link: "",
+    page_link: "https://nojszewmdev.netlify.app/",
     description:
       "Welcome to my portfolio! This is where I showcase my projects, skills, and experience. Here, you’ll find examples of my work, details about my expertise, and projects I’m proud of. If you have any questions or are interested in collaboration, feel free to reach out!",
     technologies: [
