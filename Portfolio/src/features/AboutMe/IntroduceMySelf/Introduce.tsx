@@ -3,9 +3,16 @@ import styles from "./Introduce.module.css";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
+import { motion } from "motion/react";
+
 function Introduce() {
   return (
-    <section className={styles.introduce_wrapper}>
+    <motion.section
+      initial={{ opacity: 0, y: "100px" }}
+      transition={{ duration: 1.5, ease: "easeInOut" }}
+      animate={{ opacity: 1, y: "0" }}
+      className={styles.introduce_wrapper}
+    >
       <div className={styles.image_box}>
         <img
           src="/face3.jpg"
@@ -42,7 +49,7 @@ function Introduce() {
           into the world of programming to learn more.
         </p>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

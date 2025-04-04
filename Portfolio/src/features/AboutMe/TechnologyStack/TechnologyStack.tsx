@@ -6,9 +6,16 @@ import {
 import TechnologyItem from "./TechnologyItem/TechnologyItem";
 import styles from "./TechnologyStack.module.css";
 
+import { motion } from "motion/react";
+
 function TechnologyStack() {
   return (
-    <section className={styles.technology_stacks}>
+    <motion.section
+      initial={{ opacity: 0, y: "100px" }}
+      transition={{ duration: 1.5, ease: "easeInOut" }}
+      animate={{ opacity: 1, y: "0" }}
+      className={styles.technology_stacks}
+    >
       <div className={styles.technology_used}>
         <h2 className={styles.technology_title}>Technologies I've used</h2>
         <ul className={styles.technologies_list}>
@@ -37,7 +44,7 @@ function TechnologyStack() {
           ))}
         </ul>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
