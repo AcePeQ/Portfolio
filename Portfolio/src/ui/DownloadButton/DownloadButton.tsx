@@ -5,9 +5,9 @@ import { HiOutlineDownload } from "react-icons/hi";
 function DownloadButton({ children }: { children: string }) {
   return (
     <a
-      role="download-button"
+      aria-label="resume download"
       className={styles.download_button}
-      href="#"
+      href="/CV - Maciej Nojszewski.pdf"
       download
       target="_blank"
     >
