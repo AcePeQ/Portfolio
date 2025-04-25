@@ -39,8 +39,8 @@ function Introduce() {
         </h1>
 
         <p className={styles.introduce_text}>
-          I'm an aspiring frontend React developer from Grębków, Poland and an
-          IT student at WIT Academy in Warsaw.
+          I'm an aspiring frontend React developer from Grębków, Poland and a
+          graduate of WIT Academy in Warsaw, where I studied IT.
         </p>
         <p className={styles.introduce_text}>
           I primarily focus on frontend development using React & Typescript,
