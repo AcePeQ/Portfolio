@@ -1,6 +1,6 @@
 export const projectArray = [
   {
-    project_name: "PizzWorld (in progress...)",
+    project_name: "PizzWorld",
     project_type: "Website",
     img_href: "/projectsImage/pizzworld.png",
     type: "Website",
