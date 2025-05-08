@@ -73,7 +73,11 @@ function ProjectCard({ project }: { project: IProjectCard }) {
           </div>
 
           <div className={styles.link_wrapper}>
-            <a href={project.github_link} className={styles.link}>
+            <a
+              href={project.github_link}
+              className={styles.link}
+              target="_blank"
+            >
               <FaGithub />
             </a>
 
@@ -81,6 +85,7 @@ function ProjectCard({ project }: { project: IProjectCard }) {
               <a
                 href={project.page_link}
                 className={`${styles.link} ${styles.link_page}`}
+                target="_blank"
               >
                 <IoArrowForwardOutline />
               </a>
