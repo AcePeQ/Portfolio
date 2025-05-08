@@ -7,7 +7,7 @@ export const projectArray = [
     event: "Side Project",
     year: 2025,
     github_link: "https://github.com/AcePeQ/Pizza-App",
-    page_link: "",
+    page_link: "https://pizza-app-front-end.onrender.com/",
     description:
       "PizzWorld is an innovative pizza ordering platform that removes borders and lets you enjoy your favorite flavors wherever you are. Whether you're traveling, living abroad, or simply craving a pizza from another country – PizzWorld gives you access to order it no matter where you are.",
     technologies: [
