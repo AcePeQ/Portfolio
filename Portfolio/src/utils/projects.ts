@@ -61,6 +61,27 @@ export const projectArray = [
       "C#",
     ],
   },
+
+  {
+    project_name: "Simple Translate App",
+    project_type: "Website",
+    img_href: "/projectsImage/translateapp.png",
+    type: "Website",
+    event: "Side Project",
+    year: 2025,
+    github_link: "https://github.com/AcePeQ/translate-app",
+    page_link: "https://simple-translate-appmn.netlify.app/",
+    description:
+      "Simple Translate App is a project prepared by devChallenges.io. I had to create application that includes features such as: text-to-speach, copy to copyboard and automatic language detection based on the input message. The application seemes simple but it's quite challenging to implement due to many feature. Thanks to this project I learned how to work with build-in Speech Synthesis and Speech Synthesis Utterance features.",
+    technologies: [
+      { label: "HTML", src: "/svgIcons/html.svg" },
+      { label: "CSS", src: "/svgIcons/css.svg" },
+      { label: "JavaScript", src: "/svgIcons/js.svg" },
+      { label: "React", src: "/svgIcons/react.svg" },
+      { label: "TypeScript", src: "/svgIcons/typescript.svg" },
+    ],
+    technologiesUsed: ["HTML", "CSS", "JavaScript", "React", "TypeScript"],
+  },
   {
     project_name: "Sportowi Fanatycy",
     project_type: "Website",
