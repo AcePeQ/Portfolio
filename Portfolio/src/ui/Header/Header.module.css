@@ -22,3 +22,9 @@
     padding: 0.5rem 2rem 1rem;
   }
 }
+
+@media screen and (max-width: 370px) {
+  .header {
+    padding: 0.5rem 1.25rem 1rem;
+  }
+}

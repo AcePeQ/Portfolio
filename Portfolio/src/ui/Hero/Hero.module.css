@@ -181,5 +181,7 @@
 
   .buttons_wrapper {
     justify-content: space-between;
+
+    gap: 3rem;
   }
 }
