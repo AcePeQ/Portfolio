@@ -90,7 +90,7 @@ export const projectArray = [
     event: "Side Project",
     year: 2025,
     github_link: "https://github.com/Axlii50/SportowiFanatycy-WebPage",
-    page_link: "https://sportowifanatycy.pl/",
+    page_link: "",
     description:
       "Sportowi Fanatycy (Created in association with Jakub Stegienko - Axlii50) is a platform designed for sports betting enthusiasts, offering both intuitive bet management and access to expert picks. As an administrator, you can create and manage bets, providing users with valuable insights. As a user, you gain access to free daily picks from our experts, along with the option to purchase premium packages that offer even more reliable and profitable betting tips. Join us now and bet with the best!",
     technologies: [
