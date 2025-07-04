@@ -1,5 +1,38 @@
 export const projectArray = [
   {
+    project_name: "UnsplashBox",
+    project_type: "Website",
+    img_href: "/projectsImage/unsplash.jpg",
+    type: "Website",
+    event: "Side Project",
+    year: 2025,
+    github_link: "https://github.com/AcePeQ/UnsplashBox---Unsplash-copy",
+    page_link: "https://unsplashbox-frontend.onrender.com/",
+    description:
+      "UnsplashBox - a full-stack project where I built a service that allows users to register and create personal collections of Unsplash images. Users can browse and add images to their curated collections, replicating functionality similar to Unsplash's own collections feature. This project showcases my full-stack development skills, including user authentication, image management, and responsive UI. The design was provided by DevChallenges.io; all coding was done by me.",
+    technologies: [
+      { label: "HTML", src: "/svgIcons/html.svg" },
+      { label: "CSS", src: "/svgIcons/css.svg" },
+      { label: "JavaScript", src: "/svgIcons/js.svg" },
+      { label: "React", src: "/svgIcons/react.svg" },
+      { label: "TypeScript", src: "/svgIcons/typescript.svg" },
+      { label: "Node JS", src: "/svgIcons/nodejs-2.svg" },
+      { label: "Express", src: "/svgIcons/express.svg" },
+      { label: "Mongo DB", src: "/svgIcons/mongodb.svg" },
+    ],
+    technologiesUsed: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "TypeScript",
+      "Node JS",
+      "Express",
+      "Mongo DB",
+    ],
+  },
+
+  {
     project_name: "PizzWorld",
     project_type: "Website",
     img_href: "/projectsImage/pizzworld.png",
