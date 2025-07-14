@@ -96,6 +96,27 @@ export const projectArray = [
   },
 
   {
+    project_name: "Wulkanizacja WOAS",
+    project_type: "Website",
+    img_href: "/projectsImage/wulk-woas.png",
+    type: "Website",
+    event: "Side Project",
+    year: 2025,
+    github_link: "https://github.com/AcePeQ/Wulkanizacja-Woas/tree/main/woas",
+    page_link: "https://wulkanizacja-woas.netlify.app/",
+    description:
+      "This project is a website for my dad’s car service business, WOAS. It features a clear presentation of services, including tire services (vulcanization) and mobile vulcanization, which allows customers to get help on the road. The site also includes a contact section with a built-in map, making it easy to locate the workshop. Visitors can check opening hours, browse available services, and quickly get in touch. The design is modern, responsive, and focused on convenience for the customer.",
+    technologies: [
+      { label: "HTML", src: "/svgIcons/html.svg" },
+      { label: "CSS", src: "/svgIcons/css.svg" },
+      { label: "JavaScript", src: "/svgIcons/js.svg" },
+      { label: "React", src: "/svgIcons/react.svg" },
+      { label: "TypeScript", src: "/svgIcons/typescript.svg" },
+    ],
+    technologiesUsed: ["HTML", "CSS", "JavaScript", "React", "TypeScript"],
+  },
+
+  {
     project_name: "Simple Translate App",
     project_type: "Website",
     img_href: "/projectsImage/translateapp.png",
