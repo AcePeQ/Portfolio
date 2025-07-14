@@ -105,7 +105,7 @@ export const projectArray = [
     github_link: "https://github.com/AcePeQ/Wulkanizacja-Woas/tree/main/woas",
     page_link: "https://wulkanizacja-woas.netlify.app/",
     description:
-      "This project is a website for my dad’s car service business, WOAS. It features a clear presentation of services, including tire services (vulcanization) and mobile vulcanization, which allows customers to get help on the road. The site also includes a contact section with a built-in map, making it easy to locate the workshop. Visitors can check opening hours, browse available services, and quickly get in touch. The design is modern, responsive, and focused on convenience for the customer.",
+      "This project is a website for my dad's car service business, WOAS. It features a clear presentation of services, including tire services (vulcanization) and mobile vulcanization, which allows customers to get help on the road. The site also includes a contact section with a built-in map, making it easy to locate the workshop. Visitors can check opening hours, browse available services, and quickly get in touch. The design is modern, responsive, and focused on convenience for the customer.",
     technologies: [
       { label: "HTML", src: "/svgIcons/html.svg" },
       { label: "CSS", src: "/svgIcons/css.svg" },
