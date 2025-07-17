@@ -7,7 +7,7 @@ function DownloadButton({ children }: { children: string }) {
     <a
       aria-label="resume download"
       className={styles.download_button}
-      href="/CV - Maciej Nojszewski.pdf"
+      href="/Maciej_Nojszewski_CV.pdf"
       download
       target="_blank"
     >
