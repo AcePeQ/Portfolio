@@ -1,5 +1,38 @@
 export const projectArray = [
   {
+    project_name: "GetDone",
+    project_type: "Website",
+    img_href: "/projectsImage/getdone.png",
+    type: "Website",
+    event: "Side Project",
+    year: 2025,
+    github_link: "https://github.com/AcePeQ/GetDone/tree/main",
+    page_link: "https://getdone-fdl9.onrender.com/",
+    description:
+      "GetDone is a modern task and project management application designed to help users stay organized, productive, and focused. It allows you to create tasks and move them between customizable columns. The app supports multiple boards or projects, making it ideal for individuals. Built with a responsive design, GetDone works seamlessly on desktop, tablet, and mobile devices. It's developed using React with TypeScript on the frontend and Node.js with Express on the backend, with JWT authentication and MongoDB for data storage..",
+    technologies: [
+      { label: "HTML", src: "/svgIcons/html.svg" },
+      { label: "CSS", src: "/svgIcons/css.svg" },
+      { label: "JavaScript", src: "/svgIcons/js.svg" },
+      { label: "React", src: "/svgIcons/react.svg" },
+      { label: "TypeScript", src: "/svgIcons/typescript.svg" },
+      { label: "Node JS", src: "/svgIcons/nodejs-2.svg" },
+      { label: "Express", src: "/svgIcons/express.svg" },
+      { label: "Mongo DB", src: "/svgIcons/mongodb.svg" },
+    ],
+    technologiesUsed: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "TypeScript",
+      "Node JS",
+      "Express",
+      "Mongo DB",
+    ],
+  },
+
+  {
     project_name: "UnsplashBox",
     project_type: "Website",
     img_href: "/projectsImage/unsplash.jpg",
